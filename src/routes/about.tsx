@@ -33,7 +33,7 @@ function AboutPage() {
               loading="lazy"
               width={1024}
               height={1280}
-              className="w-full h-full object-cover grayscale contrast-110"
+              className="w-full h-full object-cover"
             />
           </div>
           <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground mt-4">

@@ -7,7 +7,3 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig();
-export default defineConfig({
-  base: '/style-studio-story/', // هذا السطر هو الأهم
-  plugins: [react()], // أو أي بلجن تستخدمه
-})

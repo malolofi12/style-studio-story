@@ -4,10 +4,10 @@ import portrait from "@/assets/portrait.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Developer Portfolio" },
-      { name: "description", content: "Software engineer focused on developer tools, infrastructure, and product craft." },
-      { property: "og:title", content: "About — Developer Portfolio" },
-      { property: "og:description", content: "Software engineer focused on developer tools, infrastructure, and product craft." },
+      { title: "About — Mohammed Alolofi" },
+      { name: "description", content: "About Mohammed Alolofi — System Administrator and IT Infrastructure Engineer." },
+      { property: "og:title", content: "About — Mohammed Alolofi" },
+      { property: "og:description", content: "System Administrator and IT Infrastructure Engineer." },
       { property: "og:image", content: portrait },
     ],
   }),
@@ -15,11 +15,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const timeline = [
-  { year: "2024 →", title: "Founding Engineer, Lumen", note: "Edge observability." },
-  { year: "2022 — 2024", title: "Tech Lead, Northstar", note: "Scaled platform team 3 → 11." },
-  { year: "2020 — 2022", title: "Senior Engineer, Helio", note: "Real-time data infrastructure." },
-  { year: "2018 — 2020", title: "Engineer, Studio Black", note: "Product engineering for design tools." },
-  { year: "2017", title: "BSc, Computer Science", note: "Distributed systems thesis." },
+  { year: "Sep 2023 →", title: "System Administrator, Pure Money Exchange", note: "Windows Server, AD, VMware, Veeam across multi-branch financial services." },
+  { year: "Jan — Dec 2023", title: "IT Support, Broadcast Academy", note: "Internal network, surveillance systems, and admin operations." },
+  { year: "2023", title: "BSc, ICT — University of Saba Region", note: "GPA 88.91% (Very Good)." },
+  { year: "Cert", title: "Google IT Support Professional", note: "Foundations of Cybersecurity (Google) · SQL (DataCamp)." },
 ];
 
 function AboutPage() {
@@ -30,7 +29,7 @@ function AboutPage() {
           <div className="aspect-[4/5] overflow-hidden rounded-md border border-border bg-card">
             <img
               src={portrait}
-              alt="Portrait"
+              alt="Portrait of Mohammed Alolofi"
               loading="lazy"
               width={1024}
               height={1280}
@@ -38,31 +37,35 @@ function AboutPage() {
             />
           </div>
           <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground mt-4">
-            Photograph · Studio, 2024
+            Mohammed Alolofi · System Administrator
           </p>
         </div>
 
         <div className="md:col-span-7">
           <p className="font-mono text-xs tracking-[0.3em] text-primary uppercase mb-4">About — 003</p>
           <h1 className="font-serif text-5xl md:text-6xl tracking-tight leading-[1.0]">
-            I write software the way<br />
-            <span className="italic text-primary">a craftsman</span> sands wood.
+            I keep systems<br />
+            <span className="italic text-primary">stable</span>, quiet, and ready.
           </h1>
 
           <div className="mt-10 space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Eight years building products and the systems beneath them. My
-              focus sits where developer experience, infrastructure, and
-              interface design quietly overlap.
+              I'm a System Administrator with experience running infrastructure
+              for financial services environments — Windows Server, Active
+              Directory, VMware virtual machines, and backup &amp; recovery
+              operations across multi-branch operations of 30–50 users and 7+
+              servers.
             </p>
             <p>
-              I care about latency budgets, well-named functions, and pages
-              that load before you notice. I prefer small teams, clear
-              writing, and APIs that reveal themselves slowly.
+              I care about uptime, clean documentation, verified backups, and
+              firewalls that do exactly what they're supposed to. My background
+              also covers networking (LAN/WAN, VLAN, Mikrotik, Sophos) and
+              cybersecurity fundamentals.
             </p>
             <p>
-              When I'm away from a screen — film photography, long runs, and
-              the eternal renovation of an old apartment.
+              I hold a Bachelor's degree in ICT from the University of Saba
+              Region (GPA 88.91%) and certifications from Google and DataCamp
+              in IT Support, Cybersecurity, and SQL.
             </p>
           </div>
 

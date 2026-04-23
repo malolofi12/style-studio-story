@@ -4,10 +4,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Developer Portfolio — Engineering with Craft" },
-      { name: "description", content: "Selected work, writing and experiments by a software engineer who cares about details." },
-      { property: "og:title", content: "Developer Portfolio — Engineering with Craft" },
-      { property: "og:description", content: "Selected work, writing and experiments by a software engineer who cares about details." },
+      { title: "Mohammed Alolofi — System Administrator" },
+      { name: "description", content: "System Administrator and IT Infrastructure Engineer with experience in Windows Server, Active Directory, VMware, and backup & recovery for financial services." },
+      { property: "og:title", content: "Mohammed Alolofi — System Administrator" },
+      { property: "og:description", content: "System Administrator and IT Infrastructure Engineer." },
     ],
   }),
   component: Index,
@@ -31,24 +31,25 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6 md:px-10 w-full">
           <div className="max-w-4xl">
             <p className="font-mono text-xs md:text-sm tracking-[0.3em] text-primary uppercase mb-6">
-              Software Engineer · Available Q3
+              System Administrator · Available
             </p>
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-foreground">
-              Building quiet,<br />
-              <span className="italic text-primary">precise</span> software
-              <br />for ambitious teams.
+              Keeping critical<br />
+              <span className="italic text-primary">infrastructure</span>
+              <br />running quietly.
             </h1>
             <p className="mt-8 max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed">
-              I design and engineer interfaces, infrastructure, and the
-              connective tissue between them. Currently focused on developer
-              tools and AI-native products.
+              I'm Mohammed Alolofi — a System Administrator with hands-on
+              experience in Windows Server, Active Directory, VMware, and
+              backup &amp; recovery across multi-branch financial services
+              environments.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 to="/work"
                 className="group inline-flex items-center gap-3 px-6 py-3 bg-primary text-primary-foreground rounded-md font-mono text-sm uppercase tracking-wider hover:opacity-90 transition-all shadow-[var(--shadow-glow)]"
               >
-                View Work
+                View Experience
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
               <Link
@@ -70,11 +71,11 @@ function Index() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-24 md:py-32">
         <div className="flex items-end justify-between mb-16 border-b border-border pb-6">
           <div>
-            <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-3">01 — Selected</p>
-            <h2 className="font-serif text-4xl md:text-5xl tracking-tight">Recent work</h2>
+            <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-3">01 — Focus</p>
+            <h2 className="font-serif text-4xl md:text-5xl tracking-tight">What I do</h2>
           </div>
           <Link to="/work" className="hidden md:inline font-mono text-xs uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors">
-            All projects →
+            Full experience →
           </Link>
         </div>
 
@@ -99,12 +100,12 @@ function Index() {
         <div className="flex gap-12 font-serif text-2xl md:text-3xl italic text-muted-foreground whitespace-nowrap">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex gap-12 shrink-0">
-              <span>TypeScript</span><span className="text-primary">◆</span>
-              <span>Rust</span><span className="text-primary">◆</span>
-              <span>Distributed Systems</span><span className="text-primary">◆</span>
-              <span>Design Engineering</span><span className="text-primary">◆</span>
-              <span>AI Infrastructure</span><span className="text-primary">◆</span>
-              <span>Product</span><span className="text-primary">◆</span>
+              <span>Windows Server</span><span className="text-primary">◆</span>
+              <span>Active Directory</span><span className="text-primary">◆</span>
+              <span>VMware ESXi</span><span className="text-primary">◆</span>
+              <span>Veeam Backup</span><span className="text-primary">◆</span>
+              <span>Sophos Firewall</span><span className="text-primary">◆</span>
+              <span>Mikrotik</span><span className="text-primary">◆</span>
             </div>
           ))}
         </div>
@@ -115,27 +116,27 @@ function Index() {
 
 const previewProjects = [
   {
-    year: "2024",
-    tag: "Infra · Open Source",
-    title: "Lumen",
-    description: "An edge-first observability layer with sub-millisecond ingestion. Adopted by 14k engineers in its first quarter.",
+    year: "Core",
+    tag: "Systems",
+    title: "Windows Server & AD",
+    description: "Administer Windows Server, Active Directory, DNS and DHCP. Manage domain users, permissions, and organizational units across multi-branch environments.",
   },
   {
-    year: "2024",
-    tag: "Product · Lead",
-    title: "Atlas Studio",
-    description: "Design tool for AI workflows. Led architecture from prototype to public beta with a team of four.",
+    year: "Core",
+    tag: "Virtualization",
+    title: "VMware ESXi / vSphere",
+    description: "Maintain virtual machines, monitor system performance, and ensure uptime across 7+ servers serving 30–50 users.",
   },
   {
-    year: "2023",
-    tag: "Library",
-    title: "Halo Query",
-    description: "Type-safe, streaming database client for TypeScript. Built around inference-first ergonomics.",
+    year: "Core",
+    tag: "Backup & DR",
+    title: "Veeam Backup & Restore",
+    description: "Monitor scheduled backup jobs, verify restore operations, and maintain disaster recovery readiness for financial services data.",
   },
   {
-    year: "2023",
-    tag: "Experiment",
-    title: "Field Notes",
-    description: "A private writing tool exploring local-first sync, CRDTs, and a slower kind of computing.",
+    year: "Core",
+    tag: "Network & Security",
+    title: "Mikrotik · Sophos · VLAN",
+    description: "Maintain LAN/WAN connectivity across branches. Configure VLANs, manage Mikrotik routers and Sophos firewalls, enforce access control policies.",
   },
 ];

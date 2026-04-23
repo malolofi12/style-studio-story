@@ -3,20 +3,20 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Developer Portfolio" },
-      { name: "description", content: "Get in touch about consulting, full-time roles, or collaborations." },
-      { property: "og:title", content: "Contact — Developer Portfolio" },
-      { property: "og:description", content: "Get in touch about consulting, full-time roles, or collaborations." },
+      { title: "Contact — Mohammed Alolofi" },
+      { name: "description", content: "Get in touch with Mohammed Alolofi for system administration, IT infrastructure, or support roles." },
+      { property: "og:title", content: "Contact — Mohammed Alolofi" },
+      { property: "og:description", content: "Get in touch for system administration and IT infrastructure roles." },
     ],
   }),
   component: ContactPage,
 });
 
 const channels = [
-  { label: "Email", value: "hello@yourdomain.dev", href: "mailto:hello@yourdomain.dev" },
-  { label: "GitHub", value: "@yourhandle", href: "https://github.com" },
-  { label: "LinkedIn", value: "in/yourhandle", href: "https://linkedin.com" },
-  { label: "Signal", value: "On request", href: "#" },
+  { label: "Email", value: "malolofi12@gmail.com", href: "mailto:malolofi12@gmail.com" },
+  { label: "Phone", value: "+967 775 151 839", href: "tel:+967775151839" },
+  { label: "WhatsApp", value: "+967 775 151 839", href: "https://wa.me/967775151839" },
+  { label: "Location", value: "Yemen · Open to relocation", href: "#" },
 ];
 
 function ContactPage() {
@@ -31,8 +31,9 @@ function ContactPage() {
           <span className="italic text-primary">something good.</span>
         </h1>
         <p className="mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-          I'm currently open to selective consulting and a small number of
-          full-time conversations. The fastest way to reach me is email.
+          I'm open to System Administrator, IT Infrastructure, and IT Support
+          roles — on-site or remote. The fastest way to reach me is email or
+          WhatsApp.
         </p>
 
         <div className="mt-16 grid sm:grid-cols-2 gap-px bg-border border border-border rounded-md overflow-hidden">
@@ -56,7 +57,7 @@ function ContactPage() {
         </div>
 
         <p className="mt-12 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          Based in Berlin · Working globally · CET
+          Based in Yemen · Available for on-site &amp; remote roles
         </p>
       </div>
     </div>
